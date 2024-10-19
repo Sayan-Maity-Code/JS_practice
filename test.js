@@ -34,19 +34,27 @@
 // 3rd problem
 // Count occurances of character
 
-const count_number = (word, Letter) => {
-    word = word.trim().toLowerCase();
-    Letter = Letter.toLowerCase();
+// const count_number = (word, Letter) => {
+//     word = word.trim().toLowerCase();
+//     Letter = Letter.toLowerCase();
     
-    let totalcount = word.split("").reduce((accum, curr) => {
-        if (curr === Letter) {
-            accum++;
-        }
-        return accum;
-    }, 0)
-    console.log(totalcount);
+//     let totalcount = word.split("").reduce((accum, curr) => {
+//         if (curr === Letter) {
+//             accum++;
+//         }
+//         return accum;
+//     }, 0)
+//     console.log(totalcount);
     
     
     
+// }
+// count_number("Sayan","A")
+
+
+const sot_asc = (x) => {
+    sort_x = x.sort((a, b) => a - b)
+    return sort_x[sort_x.length-1];
 }
-count_number("Sayan","A")
+console.log(sot_asc([5,6,4,2,11,98]));
+ 
