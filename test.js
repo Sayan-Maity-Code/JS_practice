@@ -14,18 +14,39 @@
 
 
 // ---------------------------
-const createhashtag = (str) => {
-    if (str.length > 280 || str.trim().length === 0) {
-        return false;
-    }
-    split_arr = str.split(" ");
+// const createhashtag = (str) => {
+//     if (str.length > 280 || str.trim().length === 0) {
+//         return false;
+//     }
+//     split_arr = str.split(" ");
     
-    strarr = split_arr.map((cur_elem) =>  (cur_elem.replace(cur_elem[0],cur_elem[0].toUpperCase())) );
-    // console.log(strarr);
+//     strarr = split_arr.map((cur_elem) =>  (cur_elem.replace(cur_elem[0],cur_elem[0].toUpperCase())) );
+//     // console.log(strarr);
     
-    finalstr=`#${strarr.join("")}`
-    console.log(finalstr);
+//     finalstr=`#${strarr.join("")}`
+//     console.log(finalstr);
+    
+// }
+
+// createhashtag("Hello my name is Sayan");
+// ---------------------------------------
+
+// 3rd problem
+// Count occurances of character
+
+const count_number = (word, Letter) => {
+    word = word.trim().toLowerCase();
+    Letter = Letter.toLowerCase();
+    
+    let totalcount = word.split("").reduce((accum, curr) => {
+        if (curr === Letter) {
+            accum++;
+        }
+        return accum;
+    }, 0)
+    console.log(totalcount);
+    
+    
     
 }
-
-console.log(createhashtag("Hello my name is Sayan"));
+count_number("Sayan","A")
