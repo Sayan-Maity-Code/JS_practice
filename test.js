@@ -52,9 +52,23 @@
 // count_number("Sayan","A")
 
 
-const sot_asc = (x) => {
-    sort_x = x.sort((a, b) => a - b)
-    return sort_x[sort_x.length-1];
-}
-console.log(sot_asc([5,6,4,2,11,98]));
+// const sot_asc = (x) => {
+//     sort_x = x.sort((a, b) => a - b)
+//     return sort_x[sort_x.length-1];
+// }
+// console.log(sot_asc([5,6,4,2,11,98]));
  
+// DataFetchingComponent.js
+
+
+function Calculate_avg(arr) {
+    avg_arr = arr.reduce((accum, cur_elem) => accum + cur_elem, 0
+    );
+    console.log(avg_arr);
+    
+    avg_arr = avg_arr / arr.length;
+    return avg_arr;
+}
+
+console.log(Calculate_avg([1,2,3,4,5]));
+
