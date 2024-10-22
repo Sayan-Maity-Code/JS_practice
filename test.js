@@ -61,14 +61,20 @@
 // DataFetchingComponent.js
 
 
-function Calculate_avg(arr) {
-    avg_arr = arr.reduce((accum, cur_elem) => accum + cur_elem, 0
-    );
-    console.log(avg_arr);
+// function Calculate_avg(arr) {
+//     avg_arr = arr.reduce((accum, cur_elem) => accum + cur_elem, 0
+//     );
+//     console.log(avg_arr);
     
-    avg_arr = avg_arr / arr.length;
-    return avg_arr;
+//     avg_arr = avg_arr / arr.length;
+//     return avg_arr;
+// }
+
+// console.log(Calculate_avg([1,2,3,4,5]));
+
+function checkequal(arr1,arr2) {
+    return arr1.every((curVal,index)=>curVal===arr2[index])
+    
+   
 }
-
-console.log(Calculate_avg([1,2,3,4,5]));
-
+console.log(checkequal([1,2,3],[1,2,3]));
