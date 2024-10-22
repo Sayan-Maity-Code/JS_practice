@@ -18,3 +18,15 @@
 # list11.index=i
 # list11.loc["c"]
 
+
+def frequency_words(x):
+    li=x.split()
+    print(li)
+    d={}
+    for i in li:
+        if i not in d.keys():
+            d[i]=0
+        d[i]=d[i]+1
+    print(d)
+    
+frequency_words("Hello, My name is Sayan , Sayan .")
