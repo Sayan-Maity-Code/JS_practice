@@ -72,9 +72,15 @@
 
 // console.log(Calculate_avg([1,2,3,4,5]));
 
-function checkequal(arr1,arr2) {
-    return arr1.every((curVal,index)=>curVal===arr2[index])
+// function checkequal(arr1,arr2) {
+//     return arr1.every((curVal,index)=>curVal===arr2[index])
     
    
+// }
+// console.log(checkequal([1,2,3],[1,2,3]));
+
+const removeDuplicate = (arr) => {
+    newArr = [...new Set(arr)]
+    return newArr;
 }
-console.log(checkequal([1,2,3],[1,2,3]));
+console.log(removeDuplicate([1,2,22,8,2,1,66,5,4]));
