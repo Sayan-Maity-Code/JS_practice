@@ -79,8 +79,30 @@
 // }
 // console.log(checkequal([1,2,3],[1,2,3]));
 
-const removeDuplicate = (arr) => {
-    newArr = [...new Set(arr)]
-    return newArr;
+// const removeDuplicate = (arr) => {
+//     newArr = [...new Set(arr)]
+//     return newArr;
+// }
+// console.log(removeDuplicate([1,2,22,8,2,1,66,5,4]));
+
+const countVowels = (arr) => {
+    let count = 0;
+    vwl = ['a', 'e', 'i', 'o', 'u'];
+    new_arr = arr.split("");
+    console.log(new_arr);
+    // for (let char in new_arr) {
+    //     if (vwl.includes(new_arr[char].toLowerCase())) {
+    //       count++;
+    //     }
+    // ----------can also be done----
+    for (let char of new_arr) {
+        if (vwl.includes(char.toLowerCase())) {
+            count++;
+        }
+    }
+
+    return count;
+    
 }
-console.log(removeDuplicate([1,2,22,8,2,1,66,5,4]));
+
+console.log(countVowels("fbdj wwjfhA AE dvbsdvI jju"));
