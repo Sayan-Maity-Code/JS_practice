@@ -30,3 +30,8 @@
 #     print(d)
     
 # frequency_words("Hello, My name is Sayan , Sayan .")
+
+import math
+x=float(input("Provide a number please: "))
+print("Square root of the number is : ",math.sqrt(x))
+print("Square root of the number is : ",x**(1/2))
