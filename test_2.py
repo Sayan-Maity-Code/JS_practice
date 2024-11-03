@@ -48,3 +48,16 @@
 #     else:
 #         print("It's a prime number .")
 
+# ---------------------- check for a armstrong number ------------------------
+inp=input("Enter a number to check if it is an armstrong number or not ? ")
+sum = 0
+size = len(inp)
+# inp = int(inp)
+for i in (inp):
+    i=int(i)
+    sum += i**size
+inp= int(inp)
+if sum == inp:
+    print("It's an armstrong number")
+else:
+    print("It's not an armstrong number")
