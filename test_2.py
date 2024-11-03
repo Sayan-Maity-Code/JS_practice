@@ -49,15 +49,27 @@
 #         print("It's a prime number .")
 
 # ---------------------- check for a armstrong number ------------------------
-inp=input("Enter a number to check if it is an armstrong number or not ? ")
-sum = 0
-size = len(inp)
-# inp = int(inp)
-for i in (inp):
-    i=int(i)
-    sum += i**size
-inp= int(inp)
-if sum == inp:
-    print("It's an armstrong number")
-else:
-    print("It's not an armstrong number")
+# inp=input("Enter a number to check if it is an armstrong number or not ? ")
+# sum = 0
+# size = len(inp)
+# # inp = int(inp)
+# for i in (inp):
+#     i=int(i)
+#     sum += i**size
+# inp= int(inp)
+# if sum == inp:
+#     print("It's an armstrong number")
+# else:
+#     print("It's not an armstrong number")
+
+# ------------------same for a specified interval ---------------
+
+# for i in range(0,1000):
+#     sum = 0
+#     size = len(str(i))
+#     for a in str(i):
+#         sum += int(a)**size
+#     if sum == i:
+#         print(f"{i}, Armstrong number")
+        
+            
