@@ -37,13 +37,14 @@
 # print("Square root of the number is : ",x**(1/2))
 
 # ---------- check for a prime number----------
-x=int(input("Please enter a number that you want to check if it's a prime number or not : "))
-if (x==1):
-    print("It's not a prime number ")
-if x>1:
-    for i in range (2,x):
-        if (x%i==0):
-            print("It's not a prime number .")
-            break
-    else:
-        print("It's a prime number .")
+# x=int(input("Please enter a number that you want to check if it's a prime number or not : "))
+# if (x==1):
+#     print("It's not a prime number ")
+# if x>1:
+#     for i in range (2,x):
+#         if (x%i==0):
+#             print("It's not a prime number .")
+#             break
+#     else:
+#         print("It's a prime number .")
+
