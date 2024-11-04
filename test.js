@@ -105,3 +105,24 @@
 
 // ------------------------
 
+// Convert into camelcase number -----------------
+const convertIntoCamelCase=(str) => {
+    str=str.trim().split(" ");
+    str = str.map((cur_elem,index) => {
+        if (index == 0) {
+            cur_elem = cur_elem.toLowerCase();
+            return cur_elem;
+        }
+        else {
+            cur_elem = cur_elem[0].toUpperCase() + cur_elem.slice(1,).toLowerCase();
+            return cur_elem;
+        }
+        // console.log(cur_elem,index);
+        
+        
+    }).join("")
+    return str;
+
+}
+console.log(convertIntoCamelCase("Hello my name is SaYan"));
+
