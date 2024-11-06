@@ -72,4 +72,3 @@
 #     if sum == i:
 #         print(f"{i}, Armstrong number")
         
-            
