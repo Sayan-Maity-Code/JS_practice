@@ -144,4 +144,11 @@
 // console.log(findMedian([11, 2, 30, 4, 5, 7]));
 // console.log(findMedian([11, 2, 30, 4, 5]));
 
-// -------------------------------------------
+// --------------currecy converter---------------
+const rates = {
+    USD: 1,
+    EUR: 0.9,
+    GBP: 0.8,
+    INR: 82,
+};
+console.log(rates.EUR);
