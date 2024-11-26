@@ -72,3 +72,25 @@
 #     if sum == i:
 #         print(f"{i}, Armstrong number")
         
+
+# demolist= [1,2,3,4,5]
+# demo_str_list=["abd","acs","rest"]
+# new_concat_str=""
+# for i in range(len(demo_str_list)-1,-1,-1):
+#     print(demo_str_list[i])
+#     new_concat_str += demo_str_list[i]
+# print(new_concat_str)
+
+# strring = "Hello I am     Sayan"
+# words = strring.split(" ")
+# print(words[2])
+
+# new_string = strring[::-1]
+# print(new_string)
+# new_words = new_string.split()
+# new_single_space = " ".join(new_words)
+# print(new_single_space)
+
+# num = 58746
+# rev_num= num[::-1]
+# print(rev_num)
