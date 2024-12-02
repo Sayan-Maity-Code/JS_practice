@@ -74,7 +74,9 @@
         
 
 # demolist= [1,2,3,4,5]
-# demo_str_list=["abd","acs","rest"]
+# demo_str_list=["bbdefdhigh","acslow","rest,mid"]
+# demo_str_list.sort()
+# print(demo_str_list)
 # new_concat_str=""
 # for i in range(len(demo_str_list)-1,-1,-1):
 #     print(demo_str_list[i])
@@ -94,3 +96,44 @@
 # num = 58746
 # rev_num= num[::-1]
 # print(rev_num)
+
+# def commonPrefix(left, right):
+#     min_length = min(len(left), len(right))
+#     for i in range(min_length):
+#         if left[i] != right[i]:
+#             return left[:i]
+#     return left[:min_length]
+
+# def longestCommonPrefix(strs):
+#     if not strs:
+#         return ""
+    
+#     def divideAndConquer(strs, l, r):
+#         if l == r:
+#             return strs[l]
+#         else:
+#             mid = (l + r) // 2
+#             lcpLeft = divideAndConquer(strs, l, mid)
+#             lcpRight = divideAndConquer(strs, mid + 1, r)
+#             return commonPrefix(lcpLeft, lcpRight)
+    
+#     return divideAndConquer(strs, 0, len(strs) - 1)
+
+# # Example usage:
+# strings = ["flower", "flow", "flight"]
+# print(longestCommonPrefix(strings))  # Output: "fl"
+
+
+def facwithoutmul(n):
+    if n == 0:
+        return 1
+    ans = 1
+    for i in range(1, n + 1):
+        sum = 0
+        for j in range(i):
+            sum += ans
+        ans = sum
+    return ans
+    
+if __name__ == "__main__":
+    print(facwithoutmul(5))  
