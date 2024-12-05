@@ -124,16 +124,64 @@
 # print(longestCommonPrefix(strings))  # Output: "fl"
 
 
-def facwithoutmul(n):
-    if n == 0:
-        return 1
-    ans = 1
-    for i in range(1, n + 1):
-        sum = 0
-        for j in range(i):
-            sum += ans
-        ans = sum
-    return ans
+# def facwithoutmul(n):
+#     if n == 0:
+#         return 1
+#     ans = 1
+#     for i in range(1, n + 1):
+#         sum = 0
+#         for j in range(i):
+#             sum += ans
+#         ans = sum
+#     return ans
     
-if __name__ == "__main__":
-    print(facwithoutmul(5))  
+# if __name__ == "__main__":
+#     print(facwithoutmul(5))  
+
+
+# printing star as an assignment
+# n= int(input())
+# n=5
+# mid = n//2
+# # print(mid)
+# for i in range(n):
+#     if i <= mid:
+#         print("-"*(mid-n),end=" "),print("*",end=" "),print("-"*(mid-n),end =" ")
+        
+# ------- still to understand--------
+
+name_grade_list=[]
+while True:
+    name = input("Please enter the name of the candidate: ")
+    if name.lower() == "done":
+        break
+    
+    try:
+        grade = float(input("Please enter the grade of the student: "))
+    except:
+        print("Please enter a float value")
+        continue
+        
+    college="SVIST"
+#     name_grade_list.append([name,grade,college])
+# print(name_grade_list)
+# print(len(name_grade_list))
+# acc_grade=0
+# for student in name_grade_list:
+#     print(student[1])
+#     acc_grade+=student[1]
+# avg = acc_grade/len(name_grade_list) if name_grade_list else 0
+# print("Average",avg)
+# ------------------------ with the help of dictenory-----------------
+    name_grade_list.append({"name":name,"grade":grade,"college":college})
+
+sorted_list=[]
+
+for i in name_grade_list:
+    print(i["grade"])
+    sorted_list.append(i["grade"])
+
+sorted_list=sorted(name_grade_list,key=lambda x : x["grade"],reverse=True)
+print(sorted_list)
+for i in sorted_list:
+    print(f"name is {i["name"]} grade is {i["grade"]}")
