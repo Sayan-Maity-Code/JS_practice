@@ -150,38 +150,54 @@
         
 # ------- still to understand--------
 
-name_grade_list=[]
-while True:
-    name = input("Please enter the name of the candidate: ")
-    if name.lower() == "done":
-        break
+# name_grade_list=[]
+# while True:
+#     name = input("Please enter the name of the candidate: ")
+#     if name.lower() == "done":
+#         break
     
-    try:
-        grade = float(input("Please enter the grade of the student: "))
-    except:
-        print("Please enter a float value")
-        continue
+#     try:
+#         grade = float(input("Please enter the grade of the student: "))
+#     except:
+#         print("Please enter a float value")
+#         continue
         
-    college="SVIST"
-#     name_grade_list.append([name,grade,college])
-# print(name_grade_list)
-# print(len(name_grade_list))
-# acc_grade=0
-# for student in name_grade_list:
-#     print(student[1])
-#     acc_grade+=student[1]
-# avg = acc_grade/len(name_grade_list) if name_grade_list else 0
-# print("Average",avg)
-# ------------------------ with the help of dictenory-----------------
-    name_grade_list.append({"name":name,"grade":grade,"college":college})
+#     college="SVIST"
+# #     name_grade_list.append([name,grade,college])
+# # print(name_grade_list)
+# # print(len(name_grade_list))
+# # acc_grade=0
+# # for student in name_grade_list:
+# #     print(student[1])
+# #     acc_grade+=student[1]
+# # avg = acc_grade/len(name_grade_list) if name_grade_list else 0
+# # print("Average",avg)
+# # ------------------------ with the help of dictenory-----------------
+#     name_grade_list.append({"name":name,"grade":grade,"college":college})
 
-sorted_list=[]
+# sorted_list=[]
 
-for i in name_grade_list:
-    print(i["grade"])
-    sorted_list.append(i["grade"])
+# for i in name_grade_list:
+#     print(i["grade"])
+#     sorted_list.append(i["grade"])
 
-sorted_list=sorted(name_grade_list,key=lambda x : x["grade"],reverse=True)
-print(sorted_list)
-for i in sorted_list:
-    print(f"name is {i["name"]} grade is {i["grade"]}")
+# sorted_list=sorted(name_grade_list,key=lambda x : x["grade"],reverse=True)
+# print(sorted_list)
+# for i in sorted_list:
+#     print(f"name is {i["name"]} grade is {i["grade"]}")
+# ------------------------Pairs divisible by 2--------------------
+def divisibleByTwo(x):
+    emp_list=[]
+    start=0
+    while start < len(x):
+        for i in (x):
+            emp_list.append((x[start],i))
+        start+=1
+    # print(emp_list)
+    final_list=[]
+    for i in emp_list:
+        if (i[0]+i[1]) % 2 == 0:
+            final_list.append(i)
+    return (f"The final pairs that are devided by 2 are \n {final_list} \n and it's length is \n {len(final_list)}")
+
+print(divisibleByTwo([1,2,4,6,8,7]))
