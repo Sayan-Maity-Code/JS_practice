@@ -186,18 +186,28 @@
 # for i in sorted_list:
 #     print(f"name is {i["name"]} grade is {i["grade"]}")
 # ------------------------Pairs divisible by 2--------------------
-def divisibleByTwo(x):
-    emp_list=[]
-    start=0
-    while start < len(x):
-        for i in (x):
-            emp_list.append((x[start],i))
-        start+=1
-    # print(emp_list)
-    final_list=[]
-    for i in emp_list:
-        if (i[0]+i[1]) % 2 == 0:
-            final_list.append(i)
-    return (f"The final pairs that are devided by 2 are \n {final_list} \n and it's length is \n {len(final_list)}")
+# def divisibleByTwo(x):
+#     emp_list=[]
+#     start=0
+#     while start < len(x):
+#         for i in (x):
+#             emp_list.append((x[start],i))
+#         start+=1
+#     # print(emp_list)
+#     final_list=[]
+#     for i in emp_list:
+#         if (i[0]+i[1]) % 2 == 0:
+#             final_list.append(i)
+#     return (f"The final pairs that are devided by 2 are \n {final_list} \n and it's length is \n {len(final_list)}")
 
-print(divisibleByTwo([1,2,4,6,8,7]))
+# print(divisibleByTwo([1,2,4,6,8,7]))
+
+# --------------------------------------------------
+
+def checkNUmberOfOccurances(s1,s2):
+    occurance = 0
+    for c in s2:
+        occurance += s1.count(c)
+    return occurance 
+
+print(checkNUmberOfOccurances("developer","dev"))
