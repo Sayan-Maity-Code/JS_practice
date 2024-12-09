@@ -204,10 +204,19 @@
 
 # --------------------------------------------------
 
-def checkNUmberOfOccurances(s1,s2):
-    occurance = 0
-    for c in s2:
-        occurance += s1.count(c)
-    return occurance 
+# def checkNUmberOfOccurances(s1,s2):
+#     occurance = 0
+#     for c in s2:
+#         occurance += s1.count(c)
+#     return occurance 
 
-print(checkNUmberOfOccurances("developer","dev"))
+# print(checkNUmberOfOccurances("developer","dev"))
+def unionOfTwoSortedArray(arr1,arr2):
+    merged_list=arr1+arr2
+    #arr1.sort()#updates the original list
+    #return(set(arr1))
+    
+    unique_sorted_list= list(set(merged_list))
+    final_list=sorted(sorted(unique_sorted_list))#return a new list for sorted
+    return final_list
+print(unionOfTwoSortedArray([1,2,3,4],[-2,3,5,7]))
