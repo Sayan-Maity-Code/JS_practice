@@ -238,18 +238,47 @@
 # print(printGoodNumberorBadNumber(int(input("Enter a digit: "))))
 
 # ------------------------------------------------------------
-def findLargestSmallest(x):
-    x=int(x)
-    num=[]
-    start=0
-    while x > 0:
-        temp = x % 10
-        num.append(temp)
-        x = x//10
-    for i in range (0,len(num)):
-        for j in range (i+1,len(num)):
-            if num[i]<=num[j]:
-                num[i],num[j]=num[j],num[i]
-    return [num[0],num[len(num)-1]]
+# def findLargestSmallest(x):
+#     x=int(x)
+#     num=[]
+#     start=0
+#     while x > 0:
+#         temp = x % 10
+#         num.append(temp)
+#         x = x//10
+#     for i in range (0,len(num)):
+#         for j in range (i+1,len(num)):
+#             if num[i]<=num[j]:
+#                 num[i],num[j]=num[j],num[i]
+#     return [num[0],num[len(num)-1]]
 
-print(findLargestSmallest("3287"))
+# print(findLargestSmallest("3287"))
+# -------------------------------------------------------------
+
+# def findLastOccurance(num,x):
+#     final_list=[]
+#     n=len(final_list)-1
+#     for index,value in enumerate(num):
+#         if value == x:
+#             final_list.append([value,index])
+#     first_index=final_list[0][1]
+#     last_index=final_list[n][n]
+#     return {first_index,last_index}
+
+# print(findLastOccurance("organization","o"))
+# ---------------------------------------------
+# def uncommonCharacter(s1,s2):
+#     s1=s1.strip()
+#     s2=s2.strip()
+#     emp_list=[]
+#     count = 0
+#     for c in s1:
+#         if c not in s2:
+#             emp_list.append(c)
+#     for ch in s2:
+#         if ch not in s1:
+#             emp_list.append(ch)
+#     print(emp_list)
+#     return "".join(list(set(emp_list)))
+
+# print(uncommonCharacter("digital","ninja "))
