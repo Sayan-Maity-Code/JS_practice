@@ -223,16 +223,33 @@
 # print(unionOfTwoSortedArray([1,2,3,4],[-2,3,5,7]))
 
 # ----------------------------------
-def printGoodNumberorBadNumber(num):
-    total=0
-    original_num = num
-    while num > 0:
-        temp = num % 10
-        total+=temp
-        num = num//10
-    if original_num % total == 0:
-        return ("Good Number")
-    else:
-        return ("Bad Number")
+# def printGoodNumberorBadNumber(num):
+#     total=0
+#     original_num = num
+#     while num > 0:
+#         temp = num % 10
+#         total+=temp
+#         num = num//10
+#     if original_num % total == 0:
+#         return ("Good Number")
+#     else:
+#         return ("Bad Number")
 
-print(printGoodNumberorBadNumber(int(input("Enter a digit: "))))
+# print(printGoodNumberorBadNumber(int(input("Enter a digit: "))))
+
+# ------------------------------------------------------------
+def findLargestSmallest(x):
+    x=int(x)
+    num=[]
+    start=0
+    while x > 0:
+        temp = x % 10
+        num.append(temp)
+        x = x//10
+    for i in range (0,len(num)):
+        for j in range (i+1,len(num)):
+            if num[i]<=num[j]:
+                num[i],num[j]=num[j],num[i]
+    return [num[0],num[len(num)-1]]
+
+print(findLargestSmallest("3287"))
