@@ -282,3 +282,50 @@
 #     return "".join(list(set(emp_list)))
 
 # print(uncommonCharacter("digital","ninja "))
+
+# -----------------------------------------------------------
+# def twoWheelerFourWheeler(v,w):
+#     bike = ((v*4)-w)/2
+#     car = v-bike
+#     print(f"The number of two wheelers are {bike} and the number of four wheelers are {car}")
+    
+# print(twoWheelerFourWheeler(200,540))
+# ======================================================
+# class Solution:
+#     def isAnagram(self, s: str, t: str) -> bool:
+#         if len(s) != len(t):
+#             return False
+#         i = 0
+#         j=0
+#         flag = 0
+#         while i < len(s):
+#             for i in range(len(s)):
+#                 if s[i] not in t:
+#                     return False
+#             i+=1
+#             flag = 1
+#         while j<len(t):
+#             for ch in t :
+#                 if ch not in s and flag == 1:
+#                     return False
+#             j+=1
+#         return True    
+# #still not optimized
+# from collections import Counter
+# s1 = "sayan"
+# s2="Maity"
+# s1_count=Counter(s1)
+# s2_count=Counter(s2)
+# print(s1_count,type(s2_count))
+# print(s1_count["S".lower()])
+            
+# =====================================================================
+def removeVowelsString(s):
+    vowel_list=["a","e","i","o","u"]
+    for vow in vowel_list:
+        s=s.replace(vow,"")
+    return s
+
+print(removeVowelsString("welcome to tcs digital"))
+    
+        
