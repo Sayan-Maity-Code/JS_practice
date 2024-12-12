@@ -457,17 +457,40 @@
 #         return ("Not a harshad number")
 # print(checkHarshadNumber(int(input("enter a number: "))))
 
-def checkPalindrome(x):
-    real_number = x
-    total=0
-    while x>0:
-        rem = x%10
-        total = total*10+rem
-        x = x//10
-    print(total)
-    if total == real_number:
-        return ("Palindrome")
-    else:
-        return("Not a Palindrome")
-print(checkPalindrome(123))
+# def checkPalindrome(x):
+#     real_number = x
+#     total=0
+#     while x>0:
+#         rem = x%10
+#         total = total*10+rem
+#         x = x//10
+#     print(total)
+#     if total == real_number:
+#         return ("Palindrome")
+#     else:
+#         return("Not a Palindrome")
+# print(checkPalindrome(123))
         
+# def chocolatePackingProblem(x):
+#     choc_list=[]
+#     count=0
+#     for i in range(x):
+#         choc_list.append(int(input("Enter an integer value: ")))
+#     i=0
+#     while i < len(choc_list):
+#         if choc_list[i]==0:
+#             choc_list.pop(i)
+#             count+=1
+#         i+=1
+#     choc_list.extend([0]*count)
+#     return choc_list
+
+# print(chocolatePackingProblem(4))
+
+# ac=[1,2,3]
+# # for i in range(len(ac)):
+# #     ac.replace(ac[i],[8])
+# for i in range(3):
+#     ac.insert(0,6)
+# print(ac)
+#valuable knowledge insert,pop is best for list, extends works at end
