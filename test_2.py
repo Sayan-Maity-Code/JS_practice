@@ -437,3 +437,37 @@
 # print(findArmstrong(1534))
 
 # ========================================
+# def checkEvenorOdd(x):
+#     if x% 2 == 0:
+#         return ("even")
+#     else:
+#         return("Odd")
+# print(checkEvenorOdd(-12))
+
+# def checkHarshadNumber(x):
+#     total = 0
+#     real_number = x
+#     while x>0:
+#         rem = x%10
+#         total+=rem
+#         x = x//10
+#     if real_number % total == 0:
+#         return ("Harshad Number")
+#     else:
+#         return ("Not a harshad number")
+# print(checkHarshadNumber(int(input("enter a number: "))))
+
+def checkPalindrome(x):
+    real_number = x
+    total=0
+    while x>0:
+        rem = x%10
+        total = total*10+rem
+        x = x//10
+    print(total)
+    if total == real_number:
+        return ("Palindrome")
+    else:
+        return("Not a Palindrome")
+print(checkPalindrome(123))
+        
