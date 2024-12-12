@@ -320,12 +320,120 @@
 # print(s1_count["S".lower()])
             
 # =====================================================================
-def removeVowelsString(s):
-    vowel_list=["a","e","i","o","u"]
-    for vow in vowel_list:
-        s=s.replace(vow,"")
-    return s
+# def removeVowelsString(s):
+#     vowel_list=["a","e","i","o","u"]
+#     for vow in vowel_list:
+#         s=s.replace(vow,"")
+#     return s
 
-print(removeVowelsString("welcome to tcs digital"))
-    
+# print(removeVowelsString("welcome to tcs digital"))
+# ============================================================
+
+# import math
+# def calculateAreaCircle(d):
+#     r=int(d)/2
+#     return (math.pi*r**2)
+# print(calculateAreaCircle(3))
+# ============================================================
+# def findFactorial(x):
+#     if x == 0 or x==1:
+#         return 1
+#     else:
+#         return x*findFactorial(x-1)
+
+
+
+# def relatedByBlood(p):
+#     emp_list=[]
+#     total=0
+#     p=int(p)
+#     original_p = p
+#     while p > 0 :
+#         n=p%10
+#         emp_list.append(n)
+#         p=p//10
+#     for c in emp_list:
+#         total+=findFactorial(c)
+#     if total==original_p:
+#         return 1
+#     else:
+#         return 0
+
+# print(relatedByBlood(14))
+
+# ==================================================
+# def checkSubstring(s1,s2):
+#     l=len(s2)
+#     for i in range(len(s1)-l):
+#         if s2 == s1[i:i+l]:
+#             print(f"Index is {i+1}")
+#             return True
+#     return False
+
+# print(checkSubstring("abcjhafsj","fah"))
+
+# =====================================================
+# def findEmptyPacketandPush(arr):
+#     count = 0
+#     result=[]
+#     for c in arr:
+#         if c == 0:
+#             count+=1
+#         else:
+#             result.append(c)
+#     print(count)
+#     result.append([0]*count) #[1, 2, 6, 7, 9, 8, 4, [0, 0]]
+#     result.extend([0]*count) #[1, 2, 6, 7, 9, 8, 4, 0, 0]
+#     return result
+# print(findEmptyPacketandPush([1,2,6,7,9,0,8,0,4]))
+
+# =================================================================
+# def findLongestCommonPrefix(arr):
+#     if not arr:
+#         return ""
+#     prefix = arr[0]
+#     print(prefix)
+#     for strings in arr[1:]:
+#         while strings[:len(prefix)] != prefix and prefix:
+#             prefix = prefix[:len(prefix)-1]
+#         if not prefix:
+#             break
+#     return prefix
+                
+          
+# print(findLongestCommonPrefix(["flower",'flow',"flight"]))
+
+# ===============================================================================
+# def calculateProductPrice(x):
+#     x = int(x)
+#     res = 1
+#     while x>0:
+#         rem = x%10
+#         res*=rem
+#         x=x //10
+#     return res
+# print(calculateProductPrice(input("Enter the price: ")))
+# =============================================================
+
         
+# arr = [12,6,4,7,8]
+# for index,value in enumerate(arr):
+#     print(f"index is {index} and value is {value}")
+
+# def findArmstrong(x):
+#     len_x=len(str(x))
+#     x= int(x)
+#     total = 0
+#     org_num = x
+#     while x>0:
+#         rem = x%10
+#         total += rem**len_x
+#         x = x//10
+        
+#     if org_num == total:
+#         return("Armstrong Number")
+#     else:
+#         return("Not an armstrong number")
+# print(findArmstrong(1534))
+
+# ========================================
